@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<TITLE>WISE 12 micron full-sky dust map</TITLE>
+</HEAD>
+
+<body BGCOLOR="#000000" TEXT="#FFFFFF" LINK="#FFFFFF" VLINK="#FFFFFF">
+
+<font size=+2><em>WISE 12 micron full-sky dust map</em><br><p></font>
+<HR>
+<font size=+2><em>Low-resolution HEALPix samples</em><br><p></font>
+
+<img src=pngs/t313_clean.png border=1 height="323" width="700"> <p>
+
+For those interested in a quick exploration of the WSSA data, we have produced
+low-resolution HEALPix maps in Galactic coordinates:
+
+<ul>
+<li> <a href="healpix/wssa_sample_1024.fits.gz">nside = 1024</a> (43MB) </li>
+<li> <a href="healpix/wssa_sample_2048.fits.gz">nside = 2048</a> (171MB) </li>
+<li> <a href="healpix/wssa_sample_4096.fits.gz">nside = 4096</a> (682MB) </li>
+<li> <a href="healpix/wssa_sample_8192.fits.gz">nside = 8192</a> (2.7GB) </li>
+</ul>
+
+<font size=+4><em>WARNINGS</em><br><p></font>
+<ul>
+<li> These maps are intended for initial convenience and not production-stage 
+science. Do not quote values from these maps. </li>
+<li> These maps incorporate some interpolation based on the 
+<a href="before_after.html">bit-masks</a>. Optimal bit-mask usage can vary 
+depending on the specific scientific applications and/or sky locations of 
+interest.</li>
+<li> These maps have been binned to pixel sizes much larger than the actual 
+15'' resolution of the WSSA tiles.</li>
+<li> These maps only show the <a href="README">"clean" extension</a> of the 
+WSSA tiles. Bit-masks are not included due to the ambiguities in rebinning.</li>
+<li> Reading and displaying the nside=8192 map can be problematic in IDL. Depending on your FITS reading routine and IDL version, it may be necessary to unzip the file from the command line before IDL read-in. IDL 8.1 and later should properly display the nside=8192 map.</li>
+</ul>
+
+<p>
+
+<HR>
+<a href="index.html">Return to main menu.</a>
+<HR>
+<font size=-1>
+<ADDRESS> Aaron Meisner, &#x202e;ude.dravrah.saf@rensiema </ADDRESS>
+<ADDRESS> Doug Finkbeiner, &#x202e;ude.dravrah.afc@reniebknifd</ADDRESS>
+</font>
+
+
+</body>
+</HTML>

@@ -1,0 +1,1 @@
+wget -r --level=0 -nH -np --cut-dirs=3 -A "wise_???.fits.gz" http://faun.rc.fas.harvard.edu/ameisner/wssa/v1.0
